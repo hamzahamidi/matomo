@@ -113,6 +113,8 @@ describe("ActionsDataTable", function () {
 
     it("should close search when clicking on the x icon", async function() {
         page.click('.searchAction .icon-close');
+        await page.waitForNetworkIdle();
+        await page.mouse.move(-10, -10);
         expect(await page.screenshot({ fullPage: true })).to.matchImage('search_closed');
     });
 
