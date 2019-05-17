@@ -1,0 +1,38 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - phantomjs > request > hawk > hoek:
+        patched: '2019-05-17T23:03:57.722Z'
+    - phantomjs > request > hawk > sntp > hoek:
+        patched: '2019-05-17T23:03:57.722Z'
+    - phantomjs > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-05-17T23:03:57.722Z'
+    - phantomjs > request > hawk > boom > hoek:
+        patched: '2019-05-17T23:03:57.722Z'
+  'npm:lodash:20180130':
+    - karma-jshint-preprocessor > rcloader > lodash:
+        patched: '2019-05-17T23:03:57.722Z'
+  'npm:minimatch:20160620':
+    - grunt-contrib-watch > gaze > globule > minimatch:
+        patched: '2019-05-17T23:03:57.722Z'
+    - grunt-contrib-watch > gaze > globule > glob > minimatch:
+        patched: '2019-05-17T23:03:57.722Z'
+    - karma-jshint-preprocessor > jshint > cli > glob > minimatch:
+        patched: '2019-05-17T23:03:57.722Z'
+    - karma-jshint-preprocessor > jshint > minimatch:
+        patched: '2019-05-17T23:03:57.722Z'
+  'npm:qs:20140806-1':
+    - grunt-contrib-watch > tiny-lr-fork > qs:
+        patched: '2019-05-17T23:03:57.722Z'
+  'npm:request:20160119':
+    - phantomjs > request:
+        patched: '2019-05-17T23:03:57.722Z'
+  'npm:tough-cookie:20170905':
+    - phantomjs > request > tough-cookie:
+        patched: '2019-05-17T23:03:57.722Z'
+  'npm:tunnel-agent:20170305':
+    - phantomjs > request > tunnel-agent:
+        patched: '2019-05-17T23:03:57.722Z'
